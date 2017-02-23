@@ -1,0 +1,47 @@
+
+@font-face {
+	font-family: 'Droid Serif', serif;
+	src: url('https://fonts.googleapis.com/css?family=Droid+Serif');
+}
+div.container {
+	width: 800px;
+	text-align: center;
+	box-shadow: 2px 0px 2px grey;
+	padding: 0px 50px;
+	font-family: 'Droid Serif', serif;
+	margin: 0 auto;
+}
+p li, li {
+	color: #707070;
+}
+header {
+	text-align: center;
+}
+h1 {
+	color: #DB0038
+}
+h2 {
+	color: #3998A3;
+}
+h3 {
+	color: #474747;
+}
+.hero {
+	background-color: #f4f4f4;
+	text-align: center;
+	padding-bottom: 10px;
+}
+li {
+	padding: 5px 0px;
+}
+.content {
+	text-align: left;
+}
+.rating span {
+	color: #f4b400;
+	font-size: 25px;
+	text-align: center;
+}
+footer {
+	text-align: center;
+}

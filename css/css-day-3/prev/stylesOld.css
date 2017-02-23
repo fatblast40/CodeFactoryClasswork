@@ -1,0 +1,63 @@
+img.display {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mynav {
+	text-align: center;
+}
+.blockcenter {
+	text-align: center;
+}
+#feature {
+        width: 99%;
+        height: 200px;
+        color: blue;
+        margin-left: auto;
+		margin-right: auto;
+        background: url(appleback1.jpg) left top repeat, url(appleback2.jpg) center top no-repeat,
+        url(appleback3.jpg) right top no-repeat;
+        max-width: 99%;
+        
+        background-repeat: no-repeat;
+    }
+
+.columns {
+	position: relative;
+	margin: 5px;
+	float: left;
+	border: 1px solid;
+	padding: 6px;
+	height: ;
+}
+#column1 {
+	
+	float: left;
+	border: 1px solid;
+	width: 30%;
+	padding: 10px;
+}
+#column2 {
+
+	display: inline-block;
+	border: 1px solid;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+#column3 {
+	float: right;
+	border: 1px solid;
+	width: 30%;
+	padding: 10px;
+}
+
+footer {
+	position: relative;
+	float: left;
+	width: 99%;
+	text-align: center;
+	padding: 3px;
+	margin-bottom: 3%;
+	
+}

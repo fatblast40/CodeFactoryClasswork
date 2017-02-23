@@ -1,0 +1,59 @@
+.left {
+	display: block;
+	color: green;
+	border: 3px solid;
+	margin: 5px;
+	padding: 10px;
+	float: left;
+	background-color: yellow;
+
+}
+.right {
+	color: red;
+	visibility: default;
+	border: 6px solid;
+	margin: 6px;
+	padding: 12px;
+	float: right;
+	background-color: orange;
+}
+#first {
+	border: 5px solid;
+	background-color: 
+}
+#second {
+	display: ;
+	border: 6px solid;
+}
+#third {
+	display: 
+	border: 7px solid;
+}
+
+form[name='test'] input[name='finput'] {
+	width: 90%;
+    padding: 12px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* #fourth input[type=text] {
+    width: 90%;
+    padding: 12px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+#fifth {
+	display: ;
+	border: 4px solid;
+}
+#sixth {
+	display: inline;
+	border: 6px solid;
+}
