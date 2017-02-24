@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Day 2 Int 7</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+    function changeBackgroundColor() {
+
+        function getRandom255() {
+            return Math.floor(Math.random() * 255);
+        }
+        var red = getRandom255();
+        var green = getRandom255();
+        var blue = getRandom255();
+        var backgroundString = 'rgb(' + red + ',' + green + ',' + blue + ')';
+       	console.log(backgroundString);
+		document.body.style.backgroundColor = backgroundString;
+	}
+    </script>
+
+</head>
+
+<body onload="changeBackgroundColor()">
+
+
+    <h2>Dynamic Background</h2>
+
+
+</body>
+
+</html>
