@@ -17,17 +17,11 @@
         var input = input.split("*");
         var length = input.length;
 
-        var array_input = [];
-
-        for (i=0, x=1; i<length; i++, x++) {
-         array_input.push(Number(input.slice(i,x)));
-
-    }
 
         var p = 1;
 
         for (i=0; i<length; i++) {
-            p *= array_input[i];
+            p *= Number(input[i]);
 
         }
 

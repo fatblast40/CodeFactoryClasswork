@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day 3 Int 2</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <button onclick="fizzBuzz()">FizzBuzz</button>
+    <p id="paragraph"></p>
+    
+    <script type="text/javascript">
+
+    function fizzBuzz (){
+
+        i = 1;
+
+        for (i= 1; i<101; i++) {
+            switch (true) {
+                case (Number.isInteger(i/3) && Number.isInteger(i/5)):
+                document.write("FizzBuzz"+"<br>");
+                break;
+                case (Number.isInteger(i/3)):
+                document.write("Fizz"+"<br>");
+                break;
+                case (Number.isInteger(i/5)):
+                document.write("Buzz"+"<br>");
+                break;
+                default:
+                document.write(i+"<br>");
+                break;
+                }
+        }
+        
+    }
+
+
+    </script>
+    <!-- Intermediate Exercise 2 | FizzBuzz
+
+Create a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+ -->
+</body>
+
+</html>

@@ -15,17 +15,18 @@
         var input = prompt("Enter a sentence in all lower case", "this is a sentence in all lower case");
         var input = input.split(" ");
         var length = input.length;
-
-        var p = 1;
+        var CapText = [];
 
         for (i= 0; i < length; i++) {
-        	x=capFirst[i];
-        	var CapText = capFirst[i].charAt(0).toUpperCase() + array_input[i].slice(1);
+        	var x=input[i];
+        	CapText[i] = x.charAt(0).toUpperCase() + x.slice(1);
         }
-        document.getElementById("paragraph").innerHTML + CapText;
-        console.log(p);
+        var CapText = CapText.join(" ");
+        // console.log(CapText)
+        document.getElementById("paragraph").innerHTML = CapText;
+        
+       }
 
-    }
 
     // return sentence.charAt(0).toUpperCase() + sentence.slice(1);
     </script>

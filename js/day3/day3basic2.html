@@ -19,12 +19,11 @@
         var input = input.split(",");
         var length = input.length;
 
-        var maxVal=input[0];
-
+        var highest_value=Number(input[0]);
 
     	for (i=0; i<length+1; i++) {
     		
-			current_value=maxVal[i];
+			current_value=Number(input[i]);
     		console.log(typeof(input[i]));
 
     		if (current_value>highest_value) {

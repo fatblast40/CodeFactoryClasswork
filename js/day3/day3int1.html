@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day 3 Int 1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <button onclick="average2()">Average</button>
+    <p id="paragraph"></p>
+
+    <script type="text/javascript">
+    function average2() {
+        var sum = 0;
+        var i = 0;
+        var grades = [76, 85, 65, 93, 81];
+        var n = grades.length;
+
+        for (i = 0; i < n; i++) {
+            sum += Number(grades[i]);
+        }
+        var average = sum/n;
+
+        var ClassGrade = ""
+
+        switch (true) {
+            case (average < 60):
+                ClassGrade = 'F';
+                break;
+            case (average < 70):
+                ClassGrade = 'D';
+                break;
+            case (average < 80):
+                ClassGrade = 'C';
+                break;
+            case (average < 90):
+                ClassGrade = 'B';
+                break;
+            case (average =< 100):
+                ClassGrade = 'A';
+                break;
+            default:
+                ClassGrade = "Mistake";
+                break;
+        }
+
+        document.getElementById("paragraph").innerHTML = "The class average is " +average+". The class average grade is "+ClassGrade+"."
+        // console.log(average);
+        // console.log(ClassGrade);
+}
+    </script>
+    <!-- Intermediate Exercise 1 | Compare two numbers
+
+Create a JavaScript program that will calculate the average grade for the whole class. Here are the points for each student :
+
+Martin = 76
+Thomas = 85
+Klaus = 65
+Maria = 93
+David = 81
+
+Based on their points, output the average class points and the grade, according to the following table:
+
+< 60 F
+< 70 D
+< 80 C
+< 90 B
+< 100 A
+
+ -->
+</body>
+
+</html>

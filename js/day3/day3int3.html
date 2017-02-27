@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day 3 Int 3</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <input type="text" name="array"></input>
+        <button type="button" onclick="push_to_array()">Add</button>
+        <button onclick="display()">Display</button>
+    </form>
+    <hr>
+    <p id="paragraph"></p>
+    
+
+    <script type="text/javascript">
+
+    var items = [];
+    function additems () {
+        items.push(document.getElementById("inputfield").value;
+        document.getElementById("inputfield").value = " "
+
+    }
+    
+    function displayitems () {
+        for(var i in items) {
+        var e = document.createElement("p");
+        var t = document.createTextNode("element" + i + " = " + items[i]);
+        e.appendChild(t);
+        document.body.appendChild(e);
+        }
+        }
+
+
+
+    </script>
+    <!-- Intermediate Exercise 3 | Array Items
+
+Create a JavaScript program to add items in blank array and display the inserted items when user click on display button. On each addition, after the user insert an element and click on the "add" button, an alert message should be displayed "element_name added at index current_index_in_the_array"
+
+For ex. If we put into the input field the following items, banana, apple, orange and then click on display, we should get the following results:
+
+ -->
+</body>
+
+</html>
