@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Day 3 Basic 1</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+
+	<button onclick="weather()">Get Temperature</button>
+	<p id="paragraph"></p>
+
+	<script type="text/javascript">
+		function weather () {
+			var temperature = Math.floor(Math.random()*30-5)
+
+			if (temperature < 11 ) {
+				document.getElementById("paragraph").innerHTML = "It's " + temperature+ "°C. The weather is cold."
+			}
+			else {
+				document.getElementById("paragraph").innerHTML = "It's " + temperature+ "°C. The weather is moderate."
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>

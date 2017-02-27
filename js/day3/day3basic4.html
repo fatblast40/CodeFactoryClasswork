@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day 3 Basic 4</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <button onclick="capFirst()">Upper Case</button>
+    <p id="paragraph"></p>
+    <script type="text/javascript">
+    function capFirst() {
+
+        var input = prompt("Enter a sentence in all lower case", "this is a sentence in all lower case");
+        var input = input.split(" ");
+        var length = input.length;
+
+        var p = 1;
+
+        for (i= 0; i < length; i++) {
+        	x=capFirst[i];
+        	var CapText = capFirst[i].charAt(0).toUpperCase() + array_input[i].slice(1);
+        }
+        document.getElementById("paragraph").innerHTML + CapText;
+        console.log(p);
+
+    }
+
+    // return sentence.charAt(0).toUpperCase() + sentence.slice(1);
+    </script>
+    <!-- Basic Exercise 4 | Upper Case
+
+Create a JavaScript function that accepts a string as argument and converts the first letter of each word of the string in upper case.
+
+If we pass the following string "perfect problem solver" we should get "Perfect Problem Solver" printed on the screen
+
+Last modified: Sunday, 26 February 2017, 9:11 PM
+
+ -->
+</body>
+
+</html>
