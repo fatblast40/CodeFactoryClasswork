@@ -1,0 +1,9 @@
+#map {
+	width: 75%;
+	height: 500px;
+	background: yellow;
+	margin: auto;
+}
+h1 {
+	text-align: center;
+}
