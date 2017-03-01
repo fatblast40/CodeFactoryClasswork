@@ -6,29 +6,28 @@
 
 function createTable() {
 
-	var rows = Number(prompt("How many rows?", "3"));
-	var columns = Number(prompt("How many columns?", "4"));
+	var table = document.getElementById("output")
 
-	var tableText = "";
-	var rowEndText = "</tr>";
+	var noRows = Number(prompt("How many rows?", "3"));
+	var noColumns = Number(prompt("How many columns?", "4"));
 
+	for (r=0; r<noRows; r++) {
+		var row = table.insertRow(r);
+		console.log(r);
 
-
-	for (r=0; r>columns; r++) {
-		var rowStartText = "<tr id=\"row"+r+"\">";
-		tableText = rowStartText.join("<br>");
-
-		for (c=0; c>columns; c++) {
-			var ColText = "<td>Row "+r+"<br> Column "+c+"</td>";
-			tableText = rowStartText.join("<br>");
+		for (c=0; c<noColumns; c++) {
+			console.log(c);
+			var newCell = row.insertCell(c);
+			newCell.innerHTML = "Row: "+r+" Cell: "+c;
 
 		};
 
-		tableText = rowEndText.join("<br>");
+		
 
 	};
 
-	document.getElementById("output").innerHTML = tableText;
+	// tableText = rowEndText.join("<br>");
+	// document.getElementById("output").innerHTML = tableText;
 
 
 };
