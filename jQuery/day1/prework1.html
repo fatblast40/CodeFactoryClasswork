@@ -1,0 +1,69 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <title>jQuery animation</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+        <div id="animate">ANIMATE THIS TEXT NOW</div>
+       
+        <script>
+                var a = $("#animate");
+                a.hide(1000);
+                $.fx.speeds["very-slow"] = 3000;
+                a.show("very-slow");
+                a.slideUp(1000).slideDown(1000);
+        </script>
+</body>
+</html>
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Effects: Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+    #ball {
+        position: relative;
+    }
+   
+    #box {
+        width: 790px;
+        height: 630px;
+        background: green;
+        border: 1px solid #444;
+    }
+    </style>
+</head>
+<body>
+    <div id='box'>
+        <img id='ball' src='https://lh3.googleusercontent.com/-NZZ-GCZUdZ4/AAAAAAAAAAI/AAAAAAAAADs/D0Kw9TbmIj4/s640/photo.jpg'>
+    </div>
+    <script>
+    bounce();
+    function bounce() {
+        $('#ball')
+            .animate({
+                left: '270px',
+                top: '380px'
+            }, 'slow', 'linear')
+            .animate({
+                left: '540px',
+                top: '190px'
+            }, 'slow', 'linear')
+            .animate({
+                left: '270px',
+                top: '0px'
+            }, 'slow', 'linear')
+            .animate({
+                left: '0px',
+                top: '190px'
+            }, 'slow', 'linear')
+            .animate( { height:'hide', width:'toggle' }, 'slow', 'linear')
+    }
+    </script>
+</body>
+</html>
