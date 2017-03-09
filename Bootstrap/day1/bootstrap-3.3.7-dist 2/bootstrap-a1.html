@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Advanced 1</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <style type="text/css">
+    div.row {
+        padding: 1em;
+    }
+    
+    div.row:nth-of-type(1) {
+        background-color: red;
+    }
+    
+    div.row:nth-of-type(2) {
+        background-color: yellow;
+    }
+    
+    div.row:nth-of-type(3) {
+        background-color: gray;
+    }
+    
+    div.row div {
+        background-color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"> <!-- red row -->
+            <div class="col-xs-2 col-lg-1">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</div>
+            <div class="col-xs-2 col-lg-1 col-xs-offset-8 col-lg-offset-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+        </div>
+    	<div class="row"> <!-- yellow row -->
+            <div class="col-xs-2">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</div>
+            <div class="col-xs-2 col-xs-offset-3">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+            <div class="col-xs-2 col-xs-offset-3">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+        </div>
+    	<div class="row"> <!-- gray row -->
+            <div class="col-xs-2 col-lg-1">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</div>
+            <div class="col-xs-6">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+            <div class="col-xs-3 col-xs-offset-1">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+        </div>
+    	
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

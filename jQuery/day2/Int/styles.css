@@ -1,0 +1,42 @@
+.flex {
+	display: flex;
+	justify-content: center;
+
+}
+
+body * {
+	position: relative;
+	display: inline-flex;
+}
+
+#products {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.productBox {
+	flex-direction: column;
+	margin: 10px;
+	border: 1px solid;
+	box-shadow: 7px 7px 6px 3px lightgreen;
+}
+
+.productDetails {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 15px;
+	background-color: lightgreen;
+
+}
+
+.productImg {
+	max-width: 300px;
+	max-height: 150px;
+}
+
+.productDetails *  {
+	font-size: 2em;
+	font-weight: 800;
+}

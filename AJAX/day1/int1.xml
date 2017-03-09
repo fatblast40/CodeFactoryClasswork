@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Intermediate Exercise | XML
+In this example you should create an XML file which will contain data about your favorite songs. You should provide at least 20 songs with this data: title, artist, country, genre, year. -->
+
+<!-- (song#song$$>title+artist+country+genre+year)*20
+
+Intermediate Exercise | AJAX XML
+Now use XML file that you created in previous example and load it into HTML page using AJAX. You should create a nice template using Bootstrap. Be creative! :)
+ -->
+
+<song id="song01">
+	<title>Crosstown</title>
+	<artist>Jimi Hendrix</artist>
+	<country>USA</country>
+	<genre>rock</genre>
+	<year>1960</year>
+</song>
+<song id="song02">
+	<title>Closer</title>
+	<artist>NIN</artist>
+	<country>USA</country>
+	<genre>rock</genre>
+	<year>1994</year>
+</song>
+<song id="song03">
+	<title>Untited 8</title>
+	<artist>Sigur Ros</artist>
+	<country>Iceland</country>
+	<genre>slow rock</genre>
+	<year>2006</year>
+</song>
+<song id="song04">
+	<title>Bodyrock</title>
+	<artist>Moby</artist>
+	<country>USA</country>
+	<genre>electronic</genre>
+	<year>2001</year>
+</song>
+<song id="song05">
+	<title>Gone</title>
+	<artist>M83</artist>
+	<country>France</country>
+	<genre>electronic</genre>
+	<year>2004</year>
+</song>
+<song id="song06">
+	<title>All Night</title>
+	<artist>Parov Stelar</artist>
+	<country>Austria</country>
+	<genre>electroswing</genre>
+	<year>2008</year>
+</song>
+<song id="song07">
+	<title>Heartbeats</title>
+	<artist>The Knife</artist>
+	<country>Sweden</country>
+	<genre>alternative</genre>
+	<year>2007</year>
+</song>
+<song id="song08">
+	<title>Get Lucky</title>
+	<artist>Daft Punk</artist>
+	<country>France</country>
+	<genre>pop</genre>
+	<year>2014</year>
+</song>
+<song id="song09">
+	<title>Black</title>
+	<artist>Pearl Jam</artist>
+	<country>USA</country>
+	<genre>grunge</genre>
+	<year>1999</year>
+</song>
+<song id="song10">
+	<title>Midnight</title>
+	<artist>Coldplay</artist>
+	<country>Canada</country>
+	<genre>pop</genre>
+	<year>2015</year>
+</song>
+<song id="song11">
+	<title>Milk</title>
+	<artist>Moderat</artist>
+	<country>Germany</country>
+	<genre>trance</genre>
+	<year>2013</year>
+</song>
+<song id="song12">
+	<title>Enter the Ninja</title>
+	<artist>Die Antwoort</artist>
+	<country>South Africa</country>
+	<genre>rap</genre>
+	<year>2011</year>
+</song>
+<song id="song13">
+	<title>Feel Good</title>
+	<artist>Gorillaz</artist>
+	<country>USA</country>
+	<genre>pop</genre>
+	<year>2005</year>
+</song>
+<song id="song14">
+	<title>I Play You Listen</title>
+	<artist>Odesza</artist>
+	<country>USA</country>
+	<genre>electronic</genre>
+	<year>2014</year>
+</song>
+<song id="song15">
+	<title>With or Without You</title>
+	<artist>U2</artist>
+	<country>Ireland</country>
+	<genre>rock</genre>
+	<year>1988</year>
+</song>
+<song id="song16">
+	<title>Air War</title>
+	<artist>Crystal Castles</artist>
+	<country>USA</country>
+	<genre>electronic</genre>
+	<year>2009</year>
+</song>
+<song id="song17">
+	<title>I Gotta Feeling</title>
+	<artist>Black Eyed Peas</artist>
+	<country>USA</country>
+	<genre>pop</genre>
+	<year>2005</year>
+</song>
+<song id="song18">
+	<title>Kiara</title>
+	<artist>Bonobo</artist>
+	<country>USA</country>
+	<genre>trance</genre>
+	<year>2010</year>
+</song>
+<song id="song19">
+	<title>Snow</title>
+	<artist>Red Hot Chili Peppers</artist>
+	<country>USA</country>
+	<genre>alternative</genre>
+	<year>2008</year>
+</song>
+<song id="song20">
+	<title>Month of May</title>
+	<artist>Arcade Fire</artist>
+	<country>Canada</country>
+	<genre>alternative</genre>
+	<year>2011</year>
+</song>

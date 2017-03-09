@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="content">
+        <h1>The XMLHttpRequest Object</h1>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+<div id="belowContent">
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function loadDoc() {
+        var contentRequest = new XMLHttpRequest();
+        
+        contentRequest.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("belowContent").innerHTML = this.responseText;
+            }
+        };
+        contentRequest.open("GET", "sample.txt", true);
+        contentRequest.send();
+    }
+    </script>
+</body>
+
+</html>
