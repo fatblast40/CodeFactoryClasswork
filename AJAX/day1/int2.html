@@ -23,11 +23,13 @@
 </head>
 
 <body>
-    <h1>The XMLHttpRequest Object</h1>
-    <button type="button" onclick="loadDoc()">Get my books collection</button>
-    <br>
-    <br>
-    <table id="content"></table>
+    <main class="container">
+        <h1>The XMLHttpRequest Object</h1>
+        <button type="button" onclick="loadDoc()">Get my books collection</button>
+        <br>
+        <br>
+        <table id="content" class="table"></table>
+    </main>
     <script>
     function loadDoc() {
         var xhttp = new XMLHttpRequest();

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Int 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<!-- Intermediate Exercise | JSON
+For this example you should create a variable containing JSON object which will have your personal data: name, lastname, age etc.
+Then create an HTML file that will store data in local storage and another HTML page that will be template (again use Bootstrap) and on this page show data from local storage. -->
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 form-inline">
+                <input id="inputName" type="text" name="Name" placeholder="Name">
+                <input id="inputAge" type="number" name="Age" placeholder="Age">
+                <input id="inputCity" type="name" name="City" placeholder="City">
+                <button type="button" class="btn btn-primary" onclick="storeData()">Save</button>
+            </div>
+            <div class="col-sm-8 offset-sm-2 bg-info">
+                <p id="content"></p>
+            </div>
+        </div>
+    </main>
+    <script>
+    function storeData() {
+
+        var getName = document.getElementById('inputName').value;
+        var getAge = document.getElementById('inputAge').value;
+        var getCity = document.getElementById('inputCity').value;
+        console.log(getName);
+        console.log(getAge);
+        console.log(getCity);
+
+
+        var myObj, myJSON, text, obj;
+        //Storing data:
+
+        myObj = {
+            "name": getName,
+            "age": getAge,
+            "city": getCity
+        };
+
+        myJSON = JSON.stringify(myObj);
+        localStorage.setItem("localStorageName", myJSON);
+
+        text = localStorage.getItem("localStorageName");
+        obj = JSON.parse(text);
+
+        document.getElementById("content").innerHTML = obj.name + "<br>" + obj.age + "<br>" + obj.city;
+
+    };
+    </script>
+</body>
+
+</html>
