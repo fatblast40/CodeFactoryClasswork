@@ -2,20 +2,79 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>AJAX Day 2 Prep</title>
+	<title>Basic Exercise | JSON external file</title>
+
+	 <!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+<!-- 
+	Create a JSON in an external file. This JSON file should have data about your favorite movie. Now you should create a JavaScript file which will read this external JSON and present data in Bootstrap template which you will create for this exercise. 
+ -->
 <body>
-	
+	<!-- zencode site wireframe -->
+	<!-- header.container>section.row^nav.container>section.row^main.contasiner>section.row^footer.container>section.row -->
+	<main class="container">
+		<header class="row">
+			<div class="col-xs-11 form-inline">
+				<h1 id="title"></h1>
+			</div>
+			<div class="col-xs-1 form-inline">
+				<h1 id="year"></h1>
+			</div>
+		</header>
+		<section class="row">
+			<figure class="col-xs-4" id="poster" width="200">
+				<img src="poster.jpg">
+			</figure>
+			<div class="col-xs-8" id="details">
+				<section class="row">
+					<div class="col-xs-9 form-inline">
+						<h3 id="genre"></h3>
+					</div>
+					<div class="col-xs-3 form-inline">
+						<h3 id="runtime"></h3>
+					</div>
+				</section>
+				<div class="col-xs-12 form-inline">
+					<h4 id="director"></h4>
+				</div>
+				<div class="col-xs-12 form-inline">
+					<p id="cast"></p>
+				</div>
+				<iframe class="col-xs-10 form-inline"  
+					id="trailer" 
+					width="400" 
+					height="225" 
+					src="https://www.youtube.com/embed/6hB3S9bIaco?ecver=1" 
+					frameborder="0" 
+					allowfullscreen
+				></iframe>
+				<div class="col-xs-12 form-inline">
+					<p id="plot"></p>
+				</div>
+				<section class="row">
+					<div class="col-xs-4 form-inline">
+						<p id="rating"></p>
+					</div>
+					<div class="col-xs-4 form-inline">
+						<p id="nrVotes"></p>
+					</div>
+					<div class="col-xs-4 form-inline">
+						<p id="id"></p>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
 
-
-
-
-
-
-
-
-
+	<!-- Links to Persoonal Script Files -->
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

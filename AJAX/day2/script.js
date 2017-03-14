@@ -9,8 +9,20 @@ function readFile(file, callback) {
     }
     rawFile.send(null);
 }
+
 //usage:
-readFile("movie.json", function(text) {
+readFile("movie.json", function(text){
     var data = JSON.parse(text);
     console.log(data);
+
+    $("#title").html(data.title);
+    $("#year").html(data.year);
+    $("#genre").html(data.genre);
+    $("#runtime").html(data.runtime);
+    $("#director").html(data.director);
+    $("#cast").html(data.cast);
+    $("#plot").html(data.plot);
+    $("#rating").html(data.rating);
+    $("#nrVotes").html(data.nrVotes);
+    $("#id").html(data.id);
 });
